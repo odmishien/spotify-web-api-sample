@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <% if (result) { %>
+      <h2>検索結果 (<%= result.length %> 件)</h2>
+      <% for (let artist of result) { %>
+        <a href="<%= artist.external_urls.spotify %>"> <%= artist.name %> </a>
+        <hr>
+      <% } %>
+    <% } %>
+  </body>
+</html>
